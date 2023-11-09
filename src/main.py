@@ -3,6 +3,7 @@ from tkinter import filedialog
 from tkinter import colorchooser
 from generate_arbo import generate_arbo
 from generate_event_php import generate_event_php
+from generate_event_editor_php import generate_event_editor_php
 
 def generate_files():
     directory_path = directory_var.get()
@@ -18,6 +19,7 @@ def generate_files():
         # Generate tree path
         generate_arbo(directory_path)
         generate_event_php(directory_path, main_domain, full_body_tag, event_title)
+        generate_event_editor_php(directory_path, main_domain, full_body_tag)
         
         result_label.config(text="Event files have been generated.")
 
