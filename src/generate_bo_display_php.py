@@ -31,7 +31,7 @@ if ($result->num_rows > 0) {{
         $dateTime = new DateTime($date);
         $formattedDate = $dateTime->format('d/m/Y H:i');
 
-        echo "<p class='text-center'>Date : $formattedDate";
+        echo "<p id='place-" . $eventId . "' class='text-center'>Date : $formattedDate";
         echo "</div>";
         echo "</div>";
         echo "</div>";
