@@ -5,6 +5,7 @@ from generate_arbo import generate_arbo
 from generate_event_php import generate_event_php
 from generate_event_editor_php import generate_event_editor_php
 from generate_event_displayer_php import generate_event_displayer_php
+from generate_bo_display_php import generate_bo_display_php
 
 def generate_files():
     directory_path = directory_var.get()
@@ -26,6 +27,7 @@ def generate_files():
         generate_event_php(directory_path, main_domain, full_body_tag, event_title)
         generate_event_editor_php(directory_path, main_domain, full_body_tag)
         generate_event_displayer_php(directory_path, website)
+        generate_bo_display_php(directory_path, website)
         
         result_label.config(text="Event files have been generated.")
 

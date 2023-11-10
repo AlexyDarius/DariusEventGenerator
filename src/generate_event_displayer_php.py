@@ -7,7 +7,7 @@ if ($conn->connect_error) {{
 }}
 
 // Retrieve image information from the database
-$sql = "SELECT title, date, place, img_filename, text, link FROM dariusdev_event ORDER BY date DESC";
+$sql = "SELECT title, date, place, img_filename, text, link FROM {website}_event ORDER BY date DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {{
