@@ -9,6 +9,8 @@ from generate_bo_display_php import generate_bo_display_php
 from generate_upload_event_php import generate_upload_event_php
 from generate_edit_event_php import generate_edit_event_php
 from generate_delete_event_php import generate_delete_event_php
+from generate_uploadEvent_js import generate_uploadEvent_js
+from generate_script_js import generate_script_js
 
 def generate_files():
     directory_path = directory_var.get()
@@ -34,6 +36,8 @@ def generate_files():
         generate_upload_event_php(directory_path, website)
         generate_edit_event_php(directory_path, website)
         generate_delete_event_php(directory_path, website)
+        generate_uploadEvent_js(directory_path)
+        generate_script_js(directory_path)
         
         result_label.config(text="Event files have been generated.")
 
