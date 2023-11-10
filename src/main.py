@@ -16,6 +16,7 @@ from generate_venv import generate_venv
 from generate_selective_displayer_php import generate_selective_displayer_php
 from generate_update_display_status_php import generate_update_display_status_php
 from generate_updateDisplayStatus_js import generate_updateDisplayStatus_js
+from generate_display_chooser_php import generate_display_chooser_php
 
 def generate_files():
     directory_path = directory_var.get()
@@ -48,6 +49,7 @@ def generate_files():
         generate_selective_displayer_php(directory_path, website)
         generate_update_display_status_php(directory_path, website)
         generate_updateDisplayStatus_js(directory_path)
+        generate_display_chooser_php(directory_path, website)
         
         result_label.config(text="Event files have been generated.")
 
