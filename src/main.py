@@ -47,7 +47,7 @@ def generate_files():
         generate_venv(directory_path, website, db_username, db_password)
         generate_selective_displayer_php(directory_path, website)
         generate_update_display_status_php(directory_path, website)
-        generate_updateDisplayStatus_js(directory_path, website)
+        generate_updateDisplayStatus_js(directory_path)
         
         result_label.config(text="Event files have been generated.")
 
