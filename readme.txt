@@ -13,6 +13,7 @@ CREATE TABLE `{website}_event` (
   `uploaded_by` varchar(255) NOT NULL,
   `text` TEXT NOT NULL,
   `link` varchar(255) NOT NULL,
+  `display` tinyint(1) DEFAULT 0,
   `upload_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

@@ -21,7 +21,7 @@ include $_SERVER['DOCUMENT_ROOT']. '/includes/navbar.php'
 
     <!-- Form for uploading images -->
     <div id="upload-container">
-        <form id="event-form" method="post" enctype="multipart/form-data" onsubmit="uploadImage(event);">
+        <form id="event-form" method="post" enctype="multipart/form-data" onsubmit="uploadEvent(event);">
             <label for="title">Titre (255 caractères max):</label>
             <input type="text" name="title" id="title" required maxlength="255">
             <label for="title">Lieu (255 caractères max):</label>
