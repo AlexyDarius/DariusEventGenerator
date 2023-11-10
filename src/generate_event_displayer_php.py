@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {{
         echo "</section>";
     }}
 }} else {{
-    echo "Aucune image trouvée.";
+    echo "Aucun événement trouvée.";
 }}
 
 $conn->close();
