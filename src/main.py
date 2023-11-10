@@ -11,6 +11,7 @@ from generate_edit_event_php import generate_edit_event_php
 from generate_delete_event_php import generate_delete_event_php
 from generate_uploadEvent_js import generate_uploadEvent_js
 from generate_script_js import generate_script_js
+from generate_style_css import generate_style_css
 
 def generate_files():
     directory_path = directory_var.get()
@@ -38,6 +39,7 @@ def generate_files():
         generate_delete_event_php(directory_path, website)
         generate_uploadEvent_js(directory_path)
         generate_script_js(directory_path)
+        generate_style_css(directory_path, bg_color, primary_color)
         
         result_label.config(text="Event files have been generated.")
 
