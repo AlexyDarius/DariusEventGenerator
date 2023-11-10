@@ -27,7 +27,11 @@ if ($result->num_rows > 0) {{
         echo "<div>";
         echo "<h3 id='title-" . $eventId . "' style='text-align: center;font-family: Lato-Bold; margin-bottom:12px'>$title</h3>";
         echo "<p id='place-" . $eventId . "' class='text-center' style='margin-bottom:0px'>Location : $place</p>";
-        echo "<p id='date-" . $eventId . "' class='text-center'>Date : $date";
+        
+        $dateTime = new DateTime($date);
+        $formattedDate = $dateTime->format('d/m/Y H:i');
+
+        echo "<p class='text-center'>Date : $formattedDate";
         echo "</div>";
         echo "</div>";
         echo "</div>";
