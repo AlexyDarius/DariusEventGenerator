@@ -13,6 +13,9 @@ from generate_uploadEvent_js import generate_uploadEvent_js
 from generate_script_js import generate_script_js
 from generate_style_css import generate_style_css
 from generate_venv import generate_venv
+from generate_selective_displayer_php import generate_selective_displayer_php
+from generate_update_display_status_php import generate_update_display_status_php
+from generate_updateDisplayStatus_js import generate_updateDisplayStatus_js
 
 def generate_files():
     directory_path = directory_var.get()
@@ -42,6 +45,9 @@ def generate_files():
         generate_script_js(directory_path)
         generate_style_css(directory_path, bg_color, primary_color)
         generate_venv(directory_path, website, db_username, db_password)
+        generate_selective_displayer_php(directory_path, website)
+        generate_update_display_status_php(directory_path, website)
+        generate_updateDisplayStatus_js(directory_path, website)
         
         result_label.config(text="Event files have been generated.")
 
