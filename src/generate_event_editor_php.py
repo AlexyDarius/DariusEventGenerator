@@ -42,6 +42,16 @@ include $_SERVER['DOCUMENT_ROOT']. '/includes/navbar.php'
         <div id="status-message"></div>
     </div>
 
+    <div id="display-container" style="margin: 32px">
+        <form id="event-display-form">
+            <h2 style="margin: 32px; text-align: center; text-decoration: underline;">Sélection des événements à afficher sur l'accueil</h2>
+            <?php
+            require $_SERVER['DOCUMENT_ROOT']. '/modules/event/requires/display_chooser.php'
+            ?>
+        </form>
+    <hr>
+    </div>
+
     <div id="image-container" style="margin-top:32px">
 
 <?php
