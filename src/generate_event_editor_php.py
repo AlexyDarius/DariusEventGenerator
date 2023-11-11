@@ -64,6 +64,7 @@ require $_SERVER['DOCUMENT_ROOT']. '/modules/event/requires/back_office_display.
 
     <script src="js/script.js"></script>
     <script src="js/uploadEvent.js"></script>
+    <script src="js/updateDisplayStatus.js></script>
 
 <?php
 include $_SERVER['DOCUMENT_ROOT']. '/includes/footer.php'
